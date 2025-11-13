@@ -350,7 +350,7 @@
         <header>
             <div class="logo">🚀</div>
             <h1>Free Binance Courses</h1>
-            <p class="subtitle">Master Cryptocurrency Trading & Blockchain Technology</p>
+            <p class="subtitle">Trading ගැන නොමිලේ A-Z ඉගෙනගන්න අවශ්‍ය සියළුම Video Playlist ටික මෙහින් ලබා ගත හැක. මෙමගින් ඔබට Trading පිලිබඳව සියළුම දෑ නොමිලේ ඉගෙනගන්න අවස්ථාවක් ලැබේ</p>
         </header>
 
         <div id="shareSection" class="share-section">
@@ -415,7 +415,7 @@
 
         // Course data
         const courses = [
-            { url: 'https://youtube.com/playlist?list=PL1CBoUQTL_uDFKUIZiLMo1KymP3NDZt46', icon: '📊', title: 'Technical Analysis Mastery' },
+            { url: 'https://youtube.com/playlist?list=PL1CBoUQTL_uDFKUIZiLMo1KymP3NDZt46', a: '📊', title: 'Technical Analysis Mastery' },
             { url: 'https://youtube.com/playlist?list=PLmxhyFtga5Vza-f3ybncQh3PcNd1SXT5X', icon: '💹', title: 'Trading Strategies' },
             { url: 'https://youtube.com/playlist?list=PL-SaNlGIUF92WcW2vlA5RyJBjydI7qSm8', icon: '🎯', title: 'Spot Trading Fundamentals' },
             { url: 'https://youtube.com/playlist?list=PLRQoKnl7LHvIM46bszqQ-JWMW7-MW7ABK', icon: '⚡', title: 'Futures Trading Guide' },
@@ -439,11 +439,9 @@
 
         // Ads data
         const ads = [
-            { url: 'https://example-ad1.com' },
-            { url: 'https://example-ad2.com' },
-            { url: 'https://example-ad3.com' },
-            { url: 'https://example-ad4.com' },
-            { url: 'https://example-ad5.com' }
+            { url: 'https://otieu.com/4/9964213' },
+            { url: 'https://otieu.com/4/9966292' },
+            { url: 'https://otieu.com/4/9964203' }
         ];
 
         let adsViewed = 0;
@@ -460,7 +458,7 @@
                 if (!unlocked) {
                     card.innerHTML = `
                         <div class="locked-overlay">
-                            <div class="course-icon">${course.icon}</div>
+                            <div class="course-icon">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTYG8XrKLiUg4P-hogsMGTzO0R2BVUXA_oXoggirHlQ&s=10</div>
                             <h3>${course.title}</h3>
                             <p>Complete the steps above to unlock</p>
                         </div>
@@ -468,8 +466,8 @@
                     `;
                 } else {
                     card.innerHTML = `
-                        <div class="course-icon">${course.icon}</div>
-                        <h3>${course.title}</h3>
+                        <div class="course-icon">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTYG8XrKLiUg4P-hogsMGTzO0R2BVUXA_oXoggirHlQ&s=10</div>
+                        <h3>Binance Trading Full Course Sinhala Playlist</h3>
                         <p>Click to start learning</p>
                     `;
                     card.onclick = () => window.open(course.url, '_blank');
@@ -481,7 +479,7 @@
         // WhatsApp share
         document.getElementById('whatsappBtn').onclick = (e) => {
             e.preventDefault();
-            const message = encodeURIComponent(`🚀 *Binance Video For Free*\n\n📚 Access premium cryptocurrency trading courses absolutely FREE!\n\n✅ Technical Analysis\n✅ Trading Strategies\n✅ Blockchain & DeFi\n✅ Risk Management\n\n👉 ${window.location.href}\n\nStart your trading journey today! 💰`);
+            const message = encodeURIComponent(`🚀 *Binance Video For Free*\n\n📚 Trading ගැන නොමිලේ A-Z ඉගෙනගන්න අවශ්‍ය සියළුම Video Playlist ටික මෙහින් ලබා ගත හැක.\n\n✅ Technical Analysis\n✅ Trading Strategies\n✅ Blockchain & DeFi\n✅ Risk Management\n\n👉 ${window.location.href}\n\nStart your trading journey today! 💰`);
             window.open(`https://wa.me/?text=${message}`, '_blank');
             
             setTimeout(() => {
