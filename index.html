@@ -3,706 +3,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Access free Binance course videos and learn crypto trading from YouTube playlists. Simple, fast, and free education for beginners and experts.">
-    <meta name="keywords" content="Binance courses, free Binance learning, crypto trading tutorials, Binance video training, learn crypto free">
-    <meta name="author" content="Free Binance Courses">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://freebinancecourses.com/">
-    <meta property="og:title" content="Free Binance Courses | Learn Binance Trading Free">
-    <meta property="og:description" content="Access free Binance course videos and learn crypto trading from YouTube playlists. Simple, fast, and free education for beginners and experts.">
-    <meta property="og:image" content="https://freebinancecourses.com/images/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://freebinancecourses.com/">
-    <meta property="twitter:title" content="Free Binance Courses | Learn Binance Trading Free">
-    <meta property="twitter:description" content="Access free Binance course videos and learn crypto trading from YouTube playlists. Simple, fast, and free education for beginners and experts.">
-    <meta property="twitter:image" content="https://freebinancecourses.com/images/og-image.jpg">
-    
-    <title>Free Binance Courses | Learn Binance Trading Free</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <meta name="description" content="Access free Binance cryptocurrency trading courses. Learn trading strategies, technical analysis, and crypto fundamentals from expert instructors.">
+    <meta name="keywords" content="Binance courses, cryptocurrency trading, crypto education, free trading courses, blockchain learning, Bitcoin trading">
+    <meta property="og:title" content="Free Binance Trading Courses">
+    <meta property="og:description" content="Master cryptocurrency trading with our comprehensive free courses">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/6001/6001368.png">
+    <title>Free Binance Courses - Master Crypto Trading</title>
     <style>
-        :root {
-            --bg-dark: #0f172a;
-            --bg-card: #1e293b;
-            --bg-card-hover: #334155;
-            --neon-blue: #38bdf8;
-            --neon-gold: #fbbf24;
-            --text-primary: #f1f5f9;
-            --text-secondary: #cbd5e1;
-            --border-radius: 16px;
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            --transition: all 0.3s ease;
-        }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 20%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
             min-height: 100vh;
-            padding: 20px;
+            overflow-x: hidden;
         }
-        
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
         }
-        
+
         header {
             text-align: center;
-            padding: 40px 0;
-            animation: fadeIn 1s ease-out;
+            padding: 40px 20px;
+            animation: fadeInDown 1s ease-out;
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-        
-        .logo-icon {
-            font-size: 2.5rem;
-            color: var(--neon-blue);
-            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-        }
-        
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            background: linear-gradient(90deg, var(--neon-blue), var(--neon-gold));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .main-card {
-            background: var(--bg-card);
-            border-radius: var(--border-radius);
-            padding: 40px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            max-width: 800px;
-            margin: 0 auto 50px;
-            animation: slideUp 0.8s ease-out;
-        }
-        
-        .btn {
-            background: linear-gradient(90deg, var(--neon-blue), var(--neon-gold));
-            color: var(--bg-dark);
-            border: none;
-            padding: 16px 40px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-        }
-        
-        .btn i {
-            font-size: 1.2rem;
-        }
-        
-        .section {
-            display: none;
-            animation: fadeIn 0.8s ease-out;
-        }
-        
-        .section.active {
-            display: block;
-        }
-        
-        .step-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .step-header h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: var(--neon-blue);
-        }
-        
-        .step-header p {
-            color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .whatsapp-card {
-            background: var(--bg-card);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(251, 191, 36, 0.2);
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .message-preview {
-            background: #2d3748;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            font-family: monospace;
-            white-space: pre-wrap;
-            border-left: 3px solid var(--neon-gold);
-        }
-        
-        .image-preview {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 12px;
-            margin: 20px auto;
-            display: block;
-            border: 2px solid var(--neon-blue);
-        }
-        
-        .instructions {
-            text-align: left;
-            margin: 25px 0;
-            padding-left: 20px;
-            border-left: 3px solid var(--neon-blue);
-        }
-        
-        .instructions li {
-            margin-bottom: 12px;
-            color: var(--text-secondary);
-        }
-        
-        .ad-card {
-            background: var(--bg-card);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            max-width: 700px;
-            margin: 0 auto 30px;
-            text-align: center;
-        }
-        
-        .ad-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 25px 0;
-        }
-        
-        .ad-item {
-            background: rgba(56, 189, 248, 0.1);
-            padding: 15px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .ad-item i {
-            color: var(--neon-blue);
-            font-size: 1.2rem;
-        }
-        
-        .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        
-        .course-card {
-            background: var(--bg-card);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(251, 191, 36, 0.1);
-        }
-        
-        .course-card:hover {
-            transform: translateY(-5px);
-            background: var(--bg-card-hover);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-            border-color: rgba(251, 191, 36, 0.3);
-        }
-        
-        .card-img {
-            height: 180px;
-            background: linear-gradient(45deg, #38bdf8, #fbbf24);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--bg-dark);
-            font-size: 3rem;
-        }
-        
-        .card-content {
-            padding: 20px;
-        }
-        
-        .card-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--neon-gold);
-        }
-        
-        .card-content p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-        
-        .watch-btn {
-            background: rgba(56, 189, 248, 0.2);
-            color: var(--neon-blue);
-            border: 1px solid var(--neon-blue);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .watch-btn:hover {
-            background: var(--neon-blue);
-            color: var(--bg-dark);
-        }
-        
-        .loader {
-            display: none;
-            text-align: center;
-            padding: 40px;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(56, 189, 248, 0.3);
-            border-top: 5px solid var(--neon-blue);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        
-        .progress-container {
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, var(--neon-blue), var(--neon-gold));
-            width: 0%;
-            transition: width 0.5s ease;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 50px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideUp {
-            from { 
+
+        @keyframes fadeInDown {
+            from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(-50px);
             }
-            to { 
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
         }
-        
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #b8b8b8;
+            margin-bottom: 30px;
+        }
+
+        .share-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1s ease-out 0.3s backwards;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .share-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .share-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #f39c12;
+            transition: transform 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateX(10px);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #f39c12;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 20px auto;
+            display: flex;
+            width: fit-content;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .ad-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-out 0.6s backwards;
+        }
+
+        .ad-counter {
+            font-size: 3em;
+            margin: 20px 0;
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .view-ad-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .view-ad-btn:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .view-ad-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            animation: fadeIn 1s ease-out 0.9s backwards;
+        }
+
+        .course-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .course-card:hover::before {
+            left: 100%;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .course-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            color: #f39c12;
+        }
+
+        .locked-overlay {
+            filter: blur(5px);
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .lock-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            z-index: 10;
+        }
+
+        .success-message {
+            background: linear-gradient(45deg, #11998e, #38ef7d);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.2rem;
+                font-size: 2em;
             }
-            
-            .main-card {
-                padding: 25px;
-            }
-            
-            .btn {
-                padding: 14px 30px;
-                font-size: 1rem;
-            }
-            
+
             .courses-grid {
                 grid-template-columns: 1fr;
             }
+
+            .share-section, .ad-section {
+                padding: 20px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #888;
         }
     </style>
 </head>
 <body>
+    <div class="stars" id="stars"></div>
+    
     <div class="container">
         <header>
-            <div class="logo">
-                <i class="fas fa-graduation-cap logo-icon"></i>
-                <h1>Free Binance Courses</h1>
-            </div>
-            <p class="subtitle">Access 100% free Binance learning courses and start mastering crypto trading. Curated YouTube playlists from top mentors — all in one place.</p>
+            <div class="logo">🚀</div>
+            <h1>Free Binance Courses</h1>
+            <p class="subtitle">Master Cryptocurrency Trading & Blockchain Technology</p>
         </header>
-        
-        <!-- Landing Section -->
-        <section id="landing-section" class="section active">
-            <div class="main-card">
-                <h2>🎓 Learn Crypto Trading for Free</h2>
-                <p>Unlock premium Binance trading courses at no cost. Join thousands of traders who have leveled up their skills with our curated content.</p>
-                <button id="get-courses-btn" class="btn">
-                    <i class="fab fa-whatsapp"></i> Get Free Courses
-                </button>
-            </div>
-        </section>
-        
-        <!-- WhatsApp Step -->
-        <section id="whatsapp-section" class="section">
-            <div class="step-header">
-                <h2>Step 1: Share on WhatsApp</h2>
-                <p>To access the free courses, please share this offer with your trading groups on WhatsApp.</p>
-            </div>
-            
-            <div class="whatsapp-card">
-                <h3>WhatsApp Message to Share:</h3>
-                <div class="message-preview">*Binance Video For Free* 🚀
 
-🔥 Unlock Premium Crypto Trading Knowledge!
-Learn from top mentors with our curated Binance courses.
+        <div id="shareSection" class="share-section">
+            <h2>📱 Unlock Free Access</h2>
+            <div class="share-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Share in 3 WhatsApp Groups</strong> - Help others discover these valuable courses
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>View 2 Quick Ads</strong> - Support our free educational platform
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Enjoy Full Access</strong> - Learn from expert instructors
+                </div>
+            </div>
+            <a href="#" id="whatsappBtn" class="whatsapp-btn pulse">
+                <span style="font-size: 1.5em;">📱</span>
+                Share on WhatsApp
+            </a>
+        </div>
 
-👉 Get instant access: https://freebinancecourses.com/
+        <div id="adSection" class="ad-section hidden">
+            <h2>🎯 Almost There!</h2>
+            <p style="margin: 20px 0; font-size: 1.1em;">View 2 ads to unlock all courses</p>
+            <div class="ad-counter" id="adCounter">2/2</div>
+            <button id="viewAdBtn" class="view-ad-btn">View Ad</button>
+        </div>
 
-#CryptoTrading #BinanceCourses #FreeEducation</div>
-                
-                <img src="https://freebinancecourses.com/images/binance-course.jpg" alt="Binance Course" class="image-preview">
-                
-                <div class="instructions">
-                    <ol>
-                        <li>Click the WhatsApp button below to open the sharing dialog</li>
-                        <li>Share this message in <strong>3 different WhatsApp groups</strong></li>
-                        <li>After sharing, click "I've Shared" to continue</li>
-                    </ol>
-                </div>
-                
-                <button id="whatsapp-share-btn" class="btn">
-                    <i class="fab fa-whatsapp"></i> Share on WhatsApp
-                </button>
-                <button id="whatsapp-done-btn" class="btn" style="background: linear-gradient(90deg, #10b981, #34d399); margin-left: 15px;">
-                    <i class="fas fa-check"></i> I've Shared
-                </button>
-            </div>
-        </section>
-        
-        <!-- Ad Step -->
-        <section id="ad-section" class="section">
-            <div class="step-header">
-                <h2>Step 2: Support Our Platform</h2>
-                <p>To keep our courses free, please visit our partner sites. You'll need to visit 2 sites to unlock the courses.</p>
-            </div>
-            
-            <div class="ad-card">
-                <h3>Partner Sites to Visit</h3>
-                <p>Visit both sites below to unlock your free courses. Each site will open in a new tab.</p>
-                
-                <div class="ad-list">
-                    <div class="ad-item">
-                        <span>Partner Site 1</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-                    <div class="ad-item">
-                        <span>Partner Site 2</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-                </div>
-                
-                <div class="progress-container">
-                    <div class="progress-bar" id="ad-progress"></div>
-                </div>
-                
-                <button id="visit-ads-btn" class="btn">
-                    <i class="fas fa-arrow-right"></i> Visit Partner Sites
-                </button>
-            </div>
-            
-            <div class="loader" id="ad-loader">
-                <div class="spinner"></div>
-                <p>Visiting partner sites... Please keep this tab open.</p>
-            </div>
-        </section>
-        
-        <!-- Courses Section -->
-        <section id="courses-section" class="section">
-            <div class="step-header">
-                <h2>🎓 Your Free Binance Courses</h2>
-                <p>Congratulations! You now have access to all our premium Binance trading courses. Start learning today!</p>
-            </div>
-            
-            <div class="courses-grid" id="courses-container">
-                <!-- Course cards will be dynamically inserted here -->
-            </div>
-        </section>
-        
+        <div id="successMessage" class="success-message hidden">
+            🎉 Success! All courses are now unlocked. Happy Learning!
+        </div>
+
+        <div id="coursesSection">
+            <div class="courses-grid" id="coursesGrid"></div>
+        </div>
+
         <footer>
-            <p>© 2023 Free Binance Courses | Learn Crypto Trading for Free | All rights reserved</p>
-            <p style="margin-top: 10px; font-size: 0.85rem; color: #94a3b8;">
-                This is an educational platform. Trading cryptocurrencies involves risk. Past performance is not indicative of future results.
-            </p>
+            <p>© 2024 Binance Free Courses Hub | Learn, Trade, Succeed</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Disclaimer: Cryptocurrency trading involves risk. Please trade responsibly.</p>
         </footer>
     </div>
 
     <script>
+        // Create animated stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+        createStars();
+
         // Course data
         const courses = [
-            {
-                title: "Binance Trading Basics",
-                description: "Learn the fundamentals of trading on Binance with this beginner-friendly course.",
-                url: "https://youtube.com/playlist?list=PL1CBoUQTL_uDFKUIZiLMo1KymP3NDZt46&si=ToT93ex8w3k4SLiM"
-            },
-            {
-                title: "Advanced Trading Strategies",
-                description: "Master advanced trading techniques including technical analysis and risk management.",
-                url: "https://youtube.com/playlist?list=PLmxhyFtga5Vza-f3ybncQh3PcNd1SXT5X&si=A5ULxIUqNWJOY3x5"
-            },
-            {
-                title: "Crypto Technical Analysis",
-                description: "Learn how to analyze charts and predict market movements with technical indicators.",
-                url: "https://youtube.com/playlist?list=PL-SaNlGIUF92WcW2vlA5RyJBjydI7qSm8&si=nJWTW_CoCdyDy9xa"
-            },
-            {
-                title: "Binance Futures Trading",
-                description: "Understand how to trade futures contracts on Binance with leverage.",
-                url: "https://youtube.com/playlist?list=PLRQoKnl7LHvIM46bszqQ-JWMW7-MW7ABK&si=df-HS0shJNydRrSC"
-            },
-            {
-                title: "Crypto Portfolio Management",
-                description: "Learn strategies for building and managing a diversified crypto portfolio.",
-                url: "https://youtube.com/playlist?list=PLWzdKCzDKocFjuw8fGTytJCrIY5NsAIAB&si=gxoZgqH2l9XVvqYs"
-            },
-            {
-                title: "DeFi and Staking Guide",
-                description: "Explore decentralized finance and learn how to earn passive income through staking.",
-                url: "https://youtube.com/playlist?list=PLQRYN4PjvPsZmsX_a4cbbJscE_3IYkfg-&si=GydtB5MqSWaN-heh"
-            },
-            {
-                title: "Binance Spot Trading",
-                description: "Master spot trading techniques for buying and selling cryptocurrencies.",
-                url: "https://youtube.com/playlist?list=PLwXaVZW4_V1rhuDEKrTrJy5TV3uqJEm6H&si=qAdilVzlccrCnkKJ"
-            },
-            {
-                title: "Crypto Trading Psychology",
-                description: "Develop the right mindset for successful trading and avoid emotional decisions.",
-                url: "https://youtube.com/playlist?list=PLYamSGuGM9IhnM7P-Wqi-DCsmC0zmkEdk&si=nqpEALMItr2YXq7N"
-            },
-            {
-                title: "Binance Launchpad Guide",
-                description: "Learn how to participate in token sales and new project launches on Binance.",
-                url: "https://youtube.com/playlist?list=PLs5vQxJJO3gYQm6NifeVNiVr95Mnv7r3a&si=8lDFT7Jpym70DCdC"
-            },
-            {
-                title: "Crypto Tax Essentials",
-                description: "Understand your tax obligations when trading cryptocurrencies.",
-                url: "https://youtube.com/playlist?list=PLpjg28fX4v5qm20NT2uHImZo0-gSOiobh&si=Hygp0UpggfwP-KW_"
-            }
+            { url: 'https://youtube.com/playlist?list=PL1CBoUQTL_uDFKUIZiLMo1KymP3NDZt46', icon: '📊', title: 'Technical Analysis Mastery' },
+            { url: 'https://youtube.com/playlist?list=PLmxhyFtga5Vza-f3ybncQh3PcNd1SXT5X', icon: '💹', title: 'Trading Strategies' },
+            { url: 'https://youtube.com/playlist?list=PL-SaNlGIUF92WcW2vlA5RyJBjydI7qSm8', icon: '🎯', title: 'Spot Trading Fundamentals' },
+            { url: 'https://youtube.com/playlist?list=PLRQoKnl7LHvIM46bszqQ-JWMW7-MW7ABK', icon: '⚡', title: 'Futures Trading Guide' },
+            { url: 'https://youtube.com/playlist?list=PLWzdKCzDKocFjuw8fGTytJCrIY5NsAIAB', icon: '🔐', title: 'Cryptocurrency Security' },
+            { url: 'https://youtube.com/playlist?list=PLQRYN4PjvPsZmsX_a4cbbJscE_3IYkfg-', icon: '💰', title: 'Portfolio Management' },
+            { url: 'https://youtube.com/playlist?list=PLwXaVZW4_V1rhuDEKrTrJy5TV3uqJEm6H', icon: '📈', title: 'Market Analysis' },
+            { url: 'https://youtube.com/playlist?list=PLYamSGuGM9IhnM7P-Wqi-DCsmC0zmkEdk', icon: '🌐', title: 'Blockchain Basics' },
+            { url: 'https://youtube.com/playlist?list=PLs5vQxJJO3gYQm6NifeVNiVr95Mnv7r3a', icon: '💎', title: 'DeFi & Staking' },
+            { url: 'https://youtube.com/playlist?list=PLpjg28fX4v5qm20NT2uHImZo0-gSOiobh', icon: '🎓', title: 'Beginner to Pro' },
+            { url: 'https://youtube.com/playlist?list=PLrEICsUs3CpYCiReQv4cSYUUyMjQY7GuY', icon: '📱', title: 'Mobile Trading' },
+            { url: 'https://youtube.com/playlist?list=PLMG6g1uYpMWYJiTmnkBxW6jNAyBlMZOAm', icon: '🔍', title: 'Chart Patterns' },
+            { url: 'https://youtube.com/playlist?list=PLtLebD1u4tRYBEnkPJyi9dPE5g0KeU20K', icon: '⚙️', title: 'Advanced Indicators' },
+            { url: 'https://youtube.com/playlist?list=PLYamSGuGM9Ig7C6LzJc00tx1TpXhm1mIS', icon: '🎪', title: 'Risk Management' },
+            { url: 'https://youtube.com/playlist?list=PL9L5MdA74VaaAQQL-9MoBr9Bfs8AxJYkO', icon: '🏆', title: 'Winning Strategies' },
+            { url: 'https://youtube.com/playlist?list=PLYamSGuGM9IhlKENX2jmVv_NuRVRKZXWG', icon: '💼', title: 'Professional Trading' },
+            { url: 'https://youtube.com/playlist?list=PLtLebD1u4tRZ7YD6q_M9Bixn6YXSP0C_v', icon: '🌟', title: 'Expert Tips & Tricks' },
+            { url: 'https://youtube.com/playlist?list=PL-SCqnYj7lKrXnxNHPjOML49m-TMBxef_', icon: '🚀', title: 'Advanced Trading' },
+            { url: 'https://youtube.com/playlist?list=PLwXaVZW4_V1qLAMngUzpYI9HZLqnE9Bsp', icon: '📉', title: 'Market Psychology' },
+            { url: 'https://youtube.com/playlist?list=PLPbJQGObHOyeG7Hs32j0u-z9QXElQFE3l', icon: '🎯', title: 'Profit Maximization' }
         ];
-        
-        // Ad data (normally from ads.json)
+
+        // Ads data
         const ads = [
-            "https://partner1.com",
-            "https://partner2.com",
-            "https://partner3.com",
-            "https://partner4.com",
-            "https://partner5.com"
+            { url: 'https://example-ad1.com' },
+            { url: 'https://example-ad2.com' },
+            { url: 'https://example-ad3.com' },
+            { url: 'https://example-ad4.com' },
+            { url: 'https://example-ad5.com' }
         ];
-        
-        // DOM Elements
-        const landingSection = document.getElementById('landing-section');
-        const whatsappSection = document.getElementById('whatsapp-section');
-        const adSection = document.getElementById('ad-section');
-        const coursesSection = document.getElementById('courses-section');
-        const getCoursesBtn = document.getElementById('get-courses-btn');
-        const whatsappShareBtn = document.getElementById('whatsapp-share-btn');
-        const whatsappDoneBtn = document.getElementById('whatsapp-done-btn');
-        const visitAdsBtn = document.getElementById('visit-ads-btn');
-        const adLoader = document.getElementById('ad-loader');
-        const adProgress = document.getElementById('ad-progress');
-        const coursesContainer = document.getElementById('courses-container');
-        
-        // State management
-        let selectedAds = [];
-        let visitedAds = 0;
-        
-        // Initialize the page
-        function init() {
-            renderCourses();
-            setupEventListeners();
-        }
-        
-        // Render course cards
+
+        let adsViewed = 0;
+        let unlocked = false;
+
+        // Render courses
         function renderCourses() {
-            coursesContainer.innerHTML = '';
+            const grid = document.getElementById('coursesGrid');
+            grid.innerHTML = '';
             
             courses.forEach(course => {
                 const card = document.createElement('div');
                 card.className = 'course-card';
-                card.innerHTML = `
-                    <div class="card-img">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                    <div class="card-content">
+                if (!unlocked) {
+                    card.innerHTML = `
+                        <div class="locked-overlay">
+                            <div class="course-icon">${course.icon}</div>
+                            <h3>${course.title}</h3>
+                            <p>Complete the steps above to unlock</p>
+                        </div>
+                        <div class="lock-icon">🔒</div>
+                    `;
+                } else {
+                    card.innerHTML = `
+                        <div class="course-icon">${course.icon}</div>
                         <h3>${course.title}</h3>
-                        <p>${course.description}</p>
-                        <button class="watch-btn" data-url="${course.url}">
-                            <i class="fas fa-play"></i> Watch Now
-                        </button>
-                    </div>
-                `;
-                coursesContainer.appendChild(card);
-            });
-            
-            // Add event listeners to watch buttons
-            document.querySelectorAll('.watch-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const url = e.currentTarget.getAttribute('data-url');
-                    window.open(url, '_blank');
-                });
+                        <p>Click to start learning</p>
+                    `;
+                    card.onclick = () => window.open(course.url, '_blank');
+                }
+                grid.appendChild(card);
             });
         }
-        
-        // Setup event listeners
-        function setupEventListeners() {
-            getCoursesBtn.addEventListener('click', () => {
-                showSection(whatsappSection);
-            });
+
+        // WhatsApp share
+        document.getElementById('whatsappBtn').onclick = (e) => {
+            e.preventDefault();
+            const message = encodeURIComponent(`🚀 *Binance Video For Free*\n\n📚 Access premium cryptocurrency trading courses absolutely FREE!\n\n✅ Technical Analysis\n✅ Trading Strategies\n✅ Blockchain & DeFi\n✅ Risk Management\n\n👉 ${window.location.href}\n\nStart your trading journey today! 💰`);
+            window.open(`https://wa.me/?text=${message}`, '_blank');
             
-            whatsappShareBtn.addEventListener('click', () => {
-                const message = "*Binance Video For Free* 🚀%0A%0A🔥 Unlock Premium Crypto Trading Knowledge!%0ALearn from top mentors with our curated Binance courses.%0A%0A👉 Get instant access: https://freebinancecourses.com/%0A%0A#CryptoTrading #BinanceCourses #FreeEducation";
-                const url = `https://api.whatsapp.com/send?text=${message}`;
-                window.open(url, '_blank');
-            });
-            
-            whatsappDoneBtn.addEventListener('click', () => {
-                // Select two random ads
-                selectedAds = getRandomAds(2);
-                showSection(adSection);
-            });
-            
-            visitAdsBtn.addEventListener('click', () => {
-                adLoader.style.display = 'block';
-                visitAds();
-            });
-        }
-        
-        // Show a specific section
-        function showSection(section) {
-            // Hide all sections
-            [landingSection, whatsappSection, adSection, coursesSection].forEach(s => {
-                s.classList.remove('active');
-            });
-            
-            // Show the requested section
-            section.classList.add('active');
-        }
-        
-        // Get random ads
-        function getRandomAds(count) {
-            const shuffled = [...ads].sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, count);
-        }
-        
-        // Visit ads
-        function visitAds() {
-            visitedAds = 0;
-            adProgress.style.width = '0%';
-            
-            // Simulate visiting ads with a delay
             setTimeout(() => {
-                visitedAds++;
-                updateProgress();
+                document.getElementById('shareSection').classList.add('hidden');
+                document.getElementById('adSection').classList.remove('hidden');
+            }, 1000);
+        };
+
+        // View ad button
+        document.getElementById('viewAdBtn').onclick = () => {
+            const randomAd = ads[Math.floor(Math.random() * ads.length)];
+            window.open(randomAd.url, '_blank');
+            
+            adsViewed++;
+            const remaining = 2 - adsViewed;
+            document.getElementById('adCounter').textContent = `${remaining}/2`;
+            
+            if (adsViewed >= 2) {
+                unlocked = true;
+                document.getElementById('adSection').classList.add('hidden');
+                document.getElementById('successMessage').classList.remove('hidden');
+                renderCourses();
                 
                 setTimeout(() => {
-                    visitedAds++;
-                    updateProgress();
-                    
-                    // After both ads are "visited", show courses
-                    setTimeout(() => {
-                        showSection(coursesSection);
-                    }, 1000);
-                }, 2000);
-            }, 2000);
-        }
-        
-        // Update progress bar
-        function updateProgress() {
-            const progress = (visitedAds / 2) * 100;
-            adProgress.style.width = `${progress}%`;
-        }
-        
-        // Initialize the app
-        document.addEventListener('DOMContentLoaded', init);
+                    document.getElementById('successMessage').classList.add('hidden');
+                }, 5000);
+            }
+        };
+
+        // Initial render
+        renderCourses();
     </script>
 </body>
 </html>
